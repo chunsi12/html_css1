@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <form action="complete.html">
+        <input name ="id" placeholder="아이디를 입력하세요" size="20" autocomplete="off"><br>
+        <input type="password" name="pwd" size="20" maxlength="5" required><br>
+        <input name="firstname" value="자바" readonly>
+        <input name="lastname" autofocus>
+        
+        성별 : <input type="radio" id="male" name="gender" value="남자" checked>
+        <label for="male">남자</label>
+        <input type="radio" id="female" name="gender" value="여자">
+        <label for="female">여자</label><br>
+        좋아하는 동물 :
+        <input type="checkbox" name="pet" value="dog" id="dog">
+        <label for="dog">개</label>
+        <input type="checkbox" name="pet" value="cat" id="cat">
+        <label for="dog">고양이</label>
+        <input type="checkbox" name="pet" value="panda" id="panda">
+        <label for="dog">판다</label><br>
+        사진 : <input type="file" name="photo" accept="image/*"><br>
+        <fieldset>
+        <legend>버튼종류</legend>
+        <input type="hidden" name="hidden" value="숨겨서 보내는 값">
+        <input type="reset" value="초기화">
+        <input type="button" value="일반버튼" onclick="alert('click!!')">
+        <input type="image" src="img/login.png"> <!--이미지 버튼 == submit버튼-->
+        <input type="submit" value="전송버튼"><br>
+        <button type="reset">초기화</button>
+        <button>submit</button>
+        <button type="submit">submit</button>
+        <button type="button" onclick="alert('비 그만...')">일반버튼</button>
+        </fieldset>
+
+    </form>
+    <button>일반버튼</button>
+</body>
+</html>
